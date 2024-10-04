@@ -2,19 +2,11 @@
 	import RoundCard from '$lib/RoundCard/RoundCard.svelte';
 	export let data;
 
-	// TODO: deal with data.meta and pagination if more than a few articles
 	const posts = data.posts;
 
 	function formatDate(datetime: string) {
 		const event = new Date(datetime);
 		return event.toLocaleDateString();
-	}
-
-	function colsCount() {
-		let count = posts.length;
-		if (count < 2) return 1;
-		else if ((count = 2)) return 2;
-		else return 3;
 	}
 </script>
 
@@ -23,7 +15,7 @@
 		<div class="text-center">
 			<h2 class="h2">Blog</h2>
 		</div>
-		<div class="grid grid-cols-1 lg:grid-cols-{colsCount()} gap-4 md:gap-10 p-4 place-items-top">
+		<div class="flex flex-wrap justify-center gap-6 md:gap-10">
 			{#each posts as post}
 				<RoundCard
 					url={post.url}

@@ -1,2 +1,6 @@
-// Reexport your entry components here
 export {default as Ghost} from "$lib/Ghost/Ghost.svelte"
+export { getGhostData } from "$lib/Ghost/ghost"
+export {default as Map} from "$lib/Map/Map.svelte"
+export { createMapData, createFacilitiesMapData } from "$lib/Map/mapData"
+export {default as Facility} from "$lib/Facility/Facility.svelte"
+export {default as FacilityLink} from "$lib/Facility/FacilityLink.svelte"

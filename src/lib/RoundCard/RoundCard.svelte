@@ -7,8 +7,8 @@
     export let url = 'https://example.com';
 </script>
 
-<a href={url} class="block card card-hover rounded-lg hover:shadow-lg p-4 space-y-3 lg:w-80">
-    <img src={img} class="lg:h-64 bg-black/50" alt={alt} />
+<a href={url} class="card card-hover rounded-lg hover:shadow-lg p-4 space-y-3 max-w-96 md:w-96">
+    <img src={img} class="bg-black/50" alt={alt} />
     <h6 class="h6">{date}</h6>
     <h4 class="h4">{title}</h4>
     <p>{excerpt}</p>
