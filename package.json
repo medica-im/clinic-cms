@@ -1,6 +1,6 @@
 {
 	"name": "clinic-cms",
-	"version": "1.4.1",
+	"version": "1.4.3",
 	"description": "Svelte components based on Skeleton UI toolkit for the frontend of an outpatient clinic CMS.",
 	"keywords": [
 		"svelte",

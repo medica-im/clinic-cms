@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Ghost from '$lib/Ghost/Ghost.svelte';
+	const testData0 = null;
 	const testData1 = {
 		posts: [
 			{
@@ -18,24 +19,23 @@
 	const testData2 = {
 		posts: [
 			{
-				title: 'Mission: retrouve ton cap',
-				custom_excerpt: 'Prévention du surpoids et de l’obésité infantile.',
+				title: 'Atelier autosurveillance mammaire',
+				custom_excerpt:
+					'🎀 Octobre rose. Surveiller soi-même ses seins: ateliers à Vedène, lundi 7 & mardi 15 octobre 2024.',
 				feature_image:
-					'https://saint-esprit-sante.fr/blog/content/images/2024/07/obesite-infantile-1024x914.jpg',
-				published_at: '2024-07-17T18:30:55.000+02:00',
-				url: 'https://saint-esprit-sante.fr/blog/mission-retrouve-ton-cap/',
-				feature_image_alt:
-					"Un enfant pointe une fourchette vers l'objectif de l'appareil photo en faisant un clin d'œil."
+					'https://msp-vedene.fr/blog/content/images/2024/09/illustration-of-a-woman-looking-in-the-mirror.webp',
+				published_at: '2024-09-13T15:40:00.000+02:00',
+				url: 'https://msp-vedene.fr/blog/atelier-autosurveillance-surveiller-soi-meme-ses-seins/',
+				feature_image_alt: 'Femme dévêtue, devant un miroir, observant ses seins.'
 			},
 			{
-				title: 'Les printemps de la cancérologie',
+				title: "L'activité physique adaptée à Vedène?",
 				custom_excerpt:
-					"Vendredi 24 mai 2024, au Connecteur à Biarritz: journée d'information gratuite autour du cancer.",
-				feature_image:
-					'https://saint-esprit-sante.fr/blog/content/images/2024/04/printemps-cancerologie-24-05-2024-1.jpg',
-				published_at: '2024-04-22T05:23:27.000+02:00',
-				url: 'https://saint-esprit-sante.fr/blog/les-printemps-de-la-cancerologie/',
-				feature_image_alt: null
+					"Découvrez l'activité physique adaptée avec l'association KAPA Vedène et la maison de santé!",
+				feature_image: 'https://msp-vedene.fr/blog/content/images/2024/07/athletes_nus.png',
+				published_at: '2024-07-23T06:25:22.000+02:00',
+				url: 'https://msp-vedene.fr/blog/lactivite-physique-adaptee-a-vedene/',
+				feature_image_alt: 'Cinq individus masculins pratiquent la course à pied.'
 			}
 		],
 		meta: { pagination: { page: 1, limit: 6, pages: 1, total: 2, next: null, prev: null } }
@@ -119,6 +119,11 @@
 		meta: { pagination: { page: 1, limit: 10, pages: 1, total: 8, next: null, prev: null } }
 	};
 </script>
+
+<section class="bg-surface-100-800-token blog-gradient">
+	<div class="section-container"><Ghost data={testData0} /></div>
+</section>
+
 
 <section class="bg-surface-100-800-token blog-gradient">
 	<div class="section-container">

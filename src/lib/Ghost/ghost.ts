@@ -11,6 +11,7 @@ export const getGhostData = async (fetch: any, uri: string, key: string, count: 
             throw new Error(error);
         }
     } catch (error) {
+        console.error(error);
         return null;
     }
 }
