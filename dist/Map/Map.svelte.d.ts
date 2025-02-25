@@ -1,20 +1,22 @@
-import { SvelteComponent } from "svelte";
 import 'leaflet/dist/leaflet.css';
 import type { MapData } from '../interfaces/mapData.interface.ts';
-declare const __propDef: {
-    props: {
-        data: MapData[];
+interface $$__sveltets_2_IsomorphicComponent<Props extends Record<string, any> = any, Events extends Record<string, any> = any, Slots extends Record<string, any> = any, Exports = {}, Bindings = string> {
+    new (options: import('svelte').ComponentConstructorOptions<Props>): import('svelte').SvelteComponent<Props, Events, Slots> & {
+        $$bindings?: Bindings;
+    } & Exports;
+    (internal: unknown, props: Props & {
+        $$events?: Events;
+        $$slots?: Slots;
+    }): Exports & {
+        $set?: any;
+        $on?: any;
     };
-    events: {
-        [evt: string]: CustomEvent<any>;
-    };
-    slots: {};
-    exports?: {} | undefined;
-    bindings?: string | undefined;
-};
-export type MapProps = typeof __propDef.props;
-export type MapEvents = typeof __propDef.events;
-export type MapSlots = typeof __propDef.slots;
-export default class Map extends SvelteComponent<MapProps, MapEvents, MapSlots> {
+    z_$$bindings?: Bindings;
 }
-export {};
+declare const Map: $$__sveltets_2_IsomorphicComponent<{
+    data: MapData[];
+}, {
+    [evt: string]: CustomEvent<any>;
+}, {}, {}, string>;
+type Map = InstanceType<typeof Map>;
+export default Map;

@@ -1,5 +1,5 @@
-<script>import Carousel from "svelte-carousel";
-import { browser } from "$app/environment";
+<script lang="ts">import Carousel from 'svelte-carousel';
+import { browser } from '$app/environment';
 export let data;
 function compareFn(a, b) {
     return b.effectors.length - a.effectors.length;

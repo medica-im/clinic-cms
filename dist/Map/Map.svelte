@@ -1,8 +1,8 @@
-<script>import "leaflet/dist/leaflet.css";
-import { DEFAULT_TILE_LAYER_OPTIONS, DEFAULT_TILE_URL } from "./common.js";
-import { browser } from "$app/environment";
-import { Marker, LeafletMap, TileLayer, Tooltip } from "svelte-leafletjs?client";
-import { onMount } from "svelte";
+<script lang="ts">import 'leaflet/dist/leaflet.css';
+import { DEFAULT_TILE_LAYER_OPTIONS, DEFAULT_TILE_URL } from './common.js';
+import { browser } from '$app/environment';
+import { Marker, LeafletMap, TileLayer, Tooltip } from 'svelte-leafletjs?client';
+import { onMount } from 'svelte';
 export let data;
 let leafletMap;
 const getPoints = () => {

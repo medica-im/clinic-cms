@@ -1,5 +1,5 @@
-<script>import Fa from "svelte-fa";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+<script lang="ts">import Fa from 'svelte-fa';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 export let data;
 </script>
 

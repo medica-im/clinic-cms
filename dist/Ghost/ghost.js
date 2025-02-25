@@ -13,6 +13,7 @@ export const getGhostData = async (fetch, uri, key, count) => {
         }
     }
     catch (error) {
+        console.error(error);
         return null;
     }
 };

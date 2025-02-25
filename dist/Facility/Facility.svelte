@@ -1,17 +1,17 @@
-<script>import FacilityCarousel from "./FacilityCarousel.svelte";
-import Map from "../Map/Map.svelte";
-import { createFacilitiesMapData } from "../Map/mapData";
-import { scale } from "svelte/transition";
+<script lang="ts">import FacilityCarousel from './FacilityCarousel.svelte';
+import Map from '../Map/Map.svelte';
+import { createFacilitiesMapData } from '../Map/mapData';
+import { scale } from 'svelte/transition';
 export let data;
-function filterFacilities(facilities2) {
-    const f = facilities2.filter((facility) => facility.organizations.includes(data.organization.uid));
+function filterFacilities(facilities) {
+    const f = facilities.filter((facility) => facility.organizations.includes(data.organization.uid));
     return f;
 }
 const facilities = filterFacilities(data.facilities);
 const carouselFacilities = filterFacilities(data.carousel);
 function title() {
-    const title2 = data?.facilities?.length > 1 ? "Sites" : "Site";
-    return title2;
+    const title = data?.facilities?.length > 1 ? 'Sites' : 'Site';
+    return title;
 }
 function compareFn(a, b) {
     return b.effectors.length - a.effectors.length;

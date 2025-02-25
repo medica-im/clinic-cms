@@ -1,19 +1,21 @@
-import { SvelteComponent } from "svelte";
 import type { Facility } from '../interfaces/facility.interface';
-declare const __propDef: {
-    props: {
-        data: Facility;
+interface $$__sveltets_2_IsomorphicComponent<Props extends Record<string, any> = any, Events extends Record<string, any> = any, Slots extends Record<string, any> = any, Exports = {}, Bindings = string> {
+    new (options: import('svelte').ComponentConstructorOptions<Props>): import('svelte').SvelteComponent<Props, Events, Slots> & {
+        $$bindings?: Bindings;
+    } & Exports;
+    (internal: unknown, props: Props & {
+        $$events?: Events;
+        $$slots?: Slots;
+    }): Exports & {
+        $set?: any;
+        $on?: any;
     };
-    events: {
-        [evt: string]: CustomEvent<any>;
-    };
-    slots: {};
-    exports?: {} | undefined;
-    bindings?: string | undefined;
-};
-export type FacilityLinkProps = typeof __propDef.props;
-export type FacilityLinkEvents = typeof __propDef.events;
-export type FacilityLinkSlots = typeof __propDef.slots;
-export default class FacilityLink extends SvelteComponent<FacilityLinkProps, FacilityLinkEvents, FacilityLinkSlots> {
+    z_$$bindings?: Bindings;
 }
-export {};
+declare const FacilityLink: $$__sveltets_2_IsomorphicComponent<{
+    data: Facility;
+}, {
+    [evt: string]: CustomEvent<any>;
+}, {}, {}, string>;
+type FacilityLink = InstanceType<typeof FacilityLink>;
+export default FacilityLink;
