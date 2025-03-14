@@ -13,10 +13,10 @@ interface $$__sveltets_2_IsomorphicComponent<Props extends Record<string, any> =
     };
     z_$$bindings?: Bindings;
 }
-declare const Map: $$__sveltets_2_IsomorphicComponent<{
+declare const MapLeaflet: $$__sveltets_2_IsomorphicComponent<{
     data: MapData[];
 }, {
     [evt: string]: CustomEvent<any>;
 }, {}, {}, string>;
-type Map = InstanceType<typeof Map>;
-export default Map;
+type MapLeaflet = InstanceType<typeof MapLeaflet>;
+export default MapLeaflet;

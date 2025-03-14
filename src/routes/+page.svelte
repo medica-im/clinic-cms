@@ -7,4 +7,5 @@
 
 <ul>
     <li><a href='/ghost'>Ghost.svelte</a></li>
+    <li><a href='/maplibre'>MapLibre</a></li>
 </ul>

@@ -1,6 +1,6 @@
 <script lang="ts">import FacilityCarousel from './FacilityCarousel.svelte';
-import Map from '../Map/Map.svelte';
-import { createFacilitiesMapData } from '../Map/mapData';
+import MapLeaflet from '../MapLeaflet/MapLeaflet.svelte';
+import { createFacilitiesMapData } from '../MapLeaflet/mapData';
 import { scale } from 'svelte/transition';
 export let data;
 function filterFacilities(facilities) {
@@ -31,8 +31,8 @@ function compareFn(a, b) {
 			</div>
 		{/each}
 	</div>
-	<div in:scale class="h-64">
-		<Map data={createFacilitiesMapData(facilities, true)} />
+	<div in:scale class="h-64 z-0">
+		<MapLeaflet data={createFacilitiesMapData(facilities, true)} />
 	</div>
 	{#if carouselFacilities.length}
 		<div class="place-items-center items-center justify-center content-center">

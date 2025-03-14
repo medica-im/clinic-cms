@@ -1,8 +1,8 @@
 interface Tooltip {
     text: string,
-    permanent: boolean,
-    direction: string,
-    opacity: number,
+    permanent?: boolean,
+    direction?: string,
+    opacity?: number,
 }
 
 export interface MapData {
